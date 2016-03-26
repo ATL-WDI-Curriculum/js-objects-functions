@@ -292,11 +292,6 @@ Specifically, this means that the language supports:
 * Passing functions as arguments to other functions
 * Returning functions as the value from other functions
 
-### Example #3
-
-```javascript
-// TODO:
-```
 
 ## Anonymous Functions
 
@@ -327,7 +322,7 @@ In modern programming languages, variables have a ***scope***, i.e. the part of 
 
 > For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing ```function```.  JavaScript 2015 is introducing ***lexical*** scope for variables declared with the `let` keyword.
 
-### Example #4
+### Example #3
 
 ```javascript
 var president = "Everyone knows me. Globally!";
