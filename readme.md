@@ -254,6 +254,100 @@ JavaScript can store anything in variables.
 
 > Including functions!
 
+### More Function Declarations
+
+```javascript
+// simple function declaration 
+function square(x) {
+  return x * x;
+}
+
+// function assigned to a variable
+ var square = function(x) {
+  return x * x;
+};
+
+// functions as properties of an Object 
+var mathHelpers = { 
+  square: function(x) {
+    return x * x;
+  },
+  average: function(x, y) { 
+    return (x + y) / 2; 
+  }
+ };
+
+// invoking a "method"
+var y = mathHelpers.square(3);
+```
+
+## Functions as 1st Class Citizens
+
+In computer science, a programming language is said to have ***first-class*** functions if it treats functions as first-class citizens.
+
+Specifically, this means that the language supports:
+
+* Assigning functions to variables
+* Storing functions within data structures
+* Passing functions as arguments to other functions
+* Returning functions as the value from other functions
+
+### Example #3
+
+```javascript
+// TODO:
+```
+
+## Anonymous Functions
+
+```javascript
+function foo() {
+  // This is a named function...
+}
+
+function() {
+  // This is an anonymous function...
+}
+```
+
+Common uses of anonymous functions:
+
+* store it as an object key’s value
+* store it in a variable inside an object
+* pass it as an argument to a function or method
+  - use it as a callback or handler
+
+## Functions & Scope
+
+In modern programming languages, variables have a ***scope***, i.e. the part of the program where a variable is bound to a memory location. You can think of the ***scope*** as the lifetime of the variable (where in the program the variable is born and where it dies or is discarded).
+
+***Global*** variables have ***global*** scope; they are alive for the entire duration of the program execution.
+
+***Local*** variables have ***local*** scope; they are alive during a part of the execution of the program.
+
+> For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing ```function```.  JavaScript 2015 is introducing ***lexical*** scope for variables declared with the `let` keyword.
+
+### Example #4
+
+```javascript
+var president = "Everyone knows me. Globally!";
+
+function town() {
+  var mayor = "I'm unknown outside of my township.";
+
+  function house() {
+    var homebody = "No one knows me. " +
+      "I don't leave home. " +
+      "but I know the mayor and the president.";
+  }
+
+  evilDictator = "I am evil! Want to know why?";
+}
+```
+
+> If you forget the `var` keyword when declaring / introducing a new variable, JavaScript will ***punish*** you by making the variable ***global***. Many JavaScript **linters** (static code analyzers) will detect and report this mistake.
+
+
 ## Exercise: Fun with Functions Quiz (5 / 45)
 
 What is alerted in each case? Write down your answer before running the code.
