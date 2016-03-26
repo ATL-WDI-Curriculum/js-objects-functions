@@ -183,6 +183,77 @@ function declare() {
 
 > You could argue that Function Declarations are forgiving – if you try to use a function before it is declared, hoisting fixes the order and the function gets called without mishap. But that kind of forgiveness does not encourage tight coding and in the long run is probably more likely to promote surprises than prevent them. After all, programmers arrange their statements in a particular sequence for a reason.
 
+**Q. What's a Return Statement?**
+
+The ***return*** statement ends the execution of the function and (optionally) returns a value to the caller.
+
+### Example #1
+
+```javascript
+// return the first object in the array that has the specified id.
+function findById(arr, id) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].id === id) {
+      return arr[i];
+    }
+  }
+  return null;      // why do we need this?
+}
+```
+
+### Example #2
+
+```javascript
+// calculate income tax
+function getTax(income) {
+  if (income < 50000) {
+    return income * 0.15;
+  }
+  else if (income < 100000) {
+    return income * 0.20;
+  }
+  else {
+    return income * 0.25;
+  }
+}
+
+// calling the function
+console.log("Tax on 40000 = " + getTax(40000));
+console.log("Tax on 80000 = " + getTax(80000));
+console.log("Tax on 120000 = " + getTax(120000));
+```
+
+## When There Is No Return Statement
+
+Not all functions have a return value.
+
+### Examples
+
+```javascript
+line(10, 20, 60, 100); // draws a line
+console.log(str);      // outputs str to console
+```
+
+Since a function is called to perform some task, the function must either (a) ***return*** a value; or (b) ***change**** the environment in some way; or (c) ***both***.
+
+### Pure Functions
+
+Functions that do *not* change the environment (and thus only return a value) are called ***pure*** functions.
+
+Pure functions are generally easier to reason about and test because they are ***deterministic*** (i.e. predictable).
+
+Pure functions also provide for easier ***composition***.
+
+![alt tag](https://raw.githubusercontent.com/ATL-WDI-Curriculum/js-functions/master/images/composite-function.png)
+
+One of the primary characteristics of ***Functional Programming*** is that most or all of the functions are ***pure*** functions.
+
+### Functions in Variables
+
+JavaScript can store anything in variables.
+
+> Including functions!
+
 ## Exercise: Fun with Functions Quiz (5 / 45)
 
 What is alerted in each case? Write down your answer before running the code.
