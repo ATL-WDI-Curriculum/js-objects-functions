@@ -183,7 +183,7 @@ function declare() {
 
 > You could argue that Function Declarations are forgiving – if you try to use a function before it is declared, hoisting fixes the order and the function gets called without mishap. But that kind of forgiveness does not encourage tight coding and in the long run is probably more likely to promote surprises than prevent them. After all, programmers arrange their statements in a particular sequence for a reason.
 
-**Q. What's a Return Statement?**
+## What's a Return Statement?
 
 The ***return*** statement ends the execution of the function and (optionally) returns a value to the caller.
 
