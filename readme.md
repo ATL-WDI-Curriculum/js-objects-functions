@@ -20,7 +20,7 @@
 - Explain the difference between object properties and methods.
 - Write an object method.
 
-### Framing (10 / 10)
+### Framing
 **What have you learned so far in Javascript?**
 
 * Data Types
@@ -47,7 +47,7 @@ Benefits of functions
 * DRYness.
 * Naming convention (describes intent).
 
-### Recognize the parts (10 / 20)
+### Recognize the parts
 
 **What are the components of a function?**
 
@@ -132,7 +132,7 @@ While we call/reference functions defined through declarations and expressions t
 > **Note**: Declarations are processed before any code is executed, meaning you can call functions before they are declared. This behavior is known as **hoisting**.
 
 
-### Hoisting (10 / 40)
+### Hoisting
 
 What do you think will happen when we run the below code...
 ```js
@@ -322,7 +322,7 @@ In modern programming languages, variables have a ***scope***, i.e. the part of 
 
 > For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing ```function```.  JavaScript 2015 is introducing ***lexical*** scope for variables declared with the `let` keyword.
 
-### Example #3
+### Example
 
 ```javascript
 var president = "Everyone knows me. Globally!";
@@ -343,7 +343,7 @@ function town() {
 > If you forget the `var` keyword when declaring / introducing a new variable, JavaScript will ***punish*** you by making the variable ***global***. Many JavaScript **linters** (static code analyzers) will detect and report this mistake.
 
 
-## Exercise: Fun with Functions Quiz (5 / 45)
+## Exercise: Fun with Functions Quiz
 
 What is alerted in each case? Write down your answer before running the code.
 
@@ -398,9 +398,9 @@ alert(foo());
 
 
 
-## Break (10 / 55)
+## Break
 
-## Intro to Objects (5 / 60)
+## Intro to Objects
 
 In JavaScript, Objects are arbitrary collections of properties; we can add or remove these properties as we please. One way to create an object is by using a curly brace notation.
 
@@ -416,7 +416,7 @@ Objects are a complex data type - usually referred to as an *unordered* list (or
 * They are a collection of key-value pairs called properties.
 * The keys which we explicitly state when defining a property are analogous to our array indexes. They are how we access the associated value (more below).
 
-### Turn and Jot: Model WDI Student (5 / 65)
+### Turn and Jot: Model WDI Student
 
 You're goal is to pseudo-code an object literal:
 
@@ -424,7 +424,7 @@ You're goal is to pseudo-code an object literal:
 * Take 3 minutes to construct your object literal with appropriate key value pairs by drawing it on the table
 * **Bonus - One key value pair contains an array**
 
-### You DO: Interacting with Objects (30 / 95)
+### You DO: Interacting with Objects
 
 **Read through the below, and then complete the exercise with your partner**
 
@@ -517,7 +517,7 @@ Create a variable named `wdiStudent` and assign it to an object literal.
 
 > [Solution](https://gist.github.com/nolds9/efdb0a320e7143f42e96)
 
-### Nested Collections (5 / 100)
+### Nested Collections
 
 Object properties aren't limited to simple data types. We can also nest collections inside of collections.
 
@@ -544,9 +544,9 @@ var car = {
 * "Neutral" (i.e., array value within an object)?
 * "6 horses" (i.e., object value within an object)?
 
-### Break (10 / 110)
+### Break
 
-### You Do: Big Ol' Twitter Object (15 / 125)
+### You Do: Big Ol' Twitter Object
 
 As this course continues you will encounter plenty of Javascript objects in the wild. Spend **10 minutes** on the following...
 * Follow the link below and answer the questions in bold.
@@ -555,7 +555,7 @@ As this course continues you will encounter plenty of Javascript objects in the 
 
 [Twitter JSON Exercise](https://github.com/ga-dc/big_ole_twitter_object)
 
-## Methods (15 / 140)
+## Methods
 
 Methods are functions that are attached to some object.
 
@@ -592,7 +592,7 @@ We've only scratched the surface for objects. We're going to dive much deeper in
 
 > If you're looking for a sneak peak into the power of objects and functions, we recommend reading [The Secret Life of JS Objects](http://eloquentjavascript.net/06_object.html) chapter in Eloquent JS
 
-## Closing, Q&A, Review LO's (10 / 150)
+## Closing, Q&A, Review LO's
 
 1. Does a function need an input, output, and side-effect to work?
 2. What's difference between calling and referencing a function?
