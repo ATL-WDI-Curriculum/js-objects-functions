@@ -388,12 +388,15 @@ function foo(){
 alert(foo());
 ```
 
-**Hungry for More?**
-
-> Grab a Snickers || Try implementing [fizzBuzz](https://github.com/ATL-WDI-Exercises/fizzBuzz_redux) in the console with Functions!
 
 ##YOU DO
-Check out the exercise [here]https://github.com/ATL-WDI-Curriculum/js-objects-functions/blob/master/js-functions-exercises.md).
+1. Check out the function exercises [here](https://github.com/ATL-WDI-Curriculum/js-objects-functions/blob/master/js-functions-exercises.md).
+
+2. Check out this [JS Calculator Exercise](https://github.com/ATL-WDI-Exercises/js-calculator).
+
+3. Try implementing [fizzBuzz](https://github.com/ATL-WDI-Exercises/fizzBuzz_redux) in the console with Functions! 
+
+
 
 ## Break (10 / 55)
 
