@@ -187,7 +187,7 @@ function declare() {
 
 The ***return*** statement ends the execution of the function and (optionally) returns a value to the caller.
 
-### Example #1
+### Example
 
 ```javascript
 // return the first object in the array that has the specified id.
@@ -201,7 +201,7 @@ function findById(arr, id) {
 }
 ```
 
-### Example #2
+### Example
 
 ```javascript
 // calculate income tax
@@ -227,7 +227,7 @@ console.log("Tax on 120000 = " + getTax(120000));
 
 Not all functions have a return value.
 
-### Examples
+### Example
 
 ```javascript
 line(10, 20, 60, 100); // draws a line
@@ -392,17 +392,8 @@ alert(foo());
 
 > Grab a Snickers || Try implementing [fizzBuzz](https://github.com/ATL-WDI-Exercises/fizzBuzz_redux) in the console with Functions!
 
-
-####Specification:
-- The user should be asked to guess a number
-- If the user's guess is correct, the user should see a congratulatory message
-- If the user's guess is not correct, the user should be asked to guess the number again.
-
-####Bonus 1
-- When the user guesses, you should tell them if they guessed too high or too low
-
-####Bonus 2
-- When the user guesses the number correctly, tell them how many guesses it took them.
+##YOU DO
+Check out the exercise [here]https://github.com/ATL-WDI-Curriculum/js-objects-functions/blob/master/js-functions-exercises.md).
 
 ## Break (10 / 55)
 
