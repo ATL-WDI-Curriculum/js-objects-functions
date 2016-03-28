@@ -392,6 +392,18 @@ alert(foo());
 
 > Grab a Snickers || Try implementing [fizzBuzz](https://github.com/ATL-WDI-Exercises/fizzBuzz_redux) in the console with Functions!
 
+
+####Specification:
+- The user should be asked to guess a number
+- If the user's guess is correct, the user should see a congratulatory message
+- If the user's guess is not correct, the user should be asked to guess the number again.
+
+####Bonus 1
+- When the user guesses, you should tell them if they guessed too high or too low
+
+####Bonus 2
+- When the user guesses the number correctly, tell them how many guesses it took them.
+
 ## Break (10 / 55)
 
 ## Intro to Objects (5 / 60)
